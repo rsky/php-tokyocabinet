@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>tokyocabinet</name>
+ <channel>__uri</channel>
+ <summary>The PHP bindings of the Tokyo Cabinet.</summary>
+ <description>The PHP bindings of the Tokyo Cabinet.</description>
+ <lead>
+  <name>Ryusuke SEKIYAMA,</name>
+  <user>rsky</user>
+  <email>rsky0711@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-06-19</date>
+ <time>05:34:18</time>
+ <version>
+  <release>0.4.0</release>
+  <api>0.4.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+ <notes>
+- Initial release on PEAR channel.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="4b057f97cd2796c57374f3f2690d3baa" name="examples/bdb1-simple.php" role="data" />
+   <file baseinstalldir="/" md5sum="d5695bdd20bdcc8e20f9965f824ee634" name="examples/bdb2-int32.php" role="data" />
+   <file baseinstalldir="/" md5sum="bfb450c6def2b46da93c0f8a341a35fa" name="examples/bdb3-int64.php" role="data" />
+   <file baseinstalldir="/" md5sum="d590306e36d286dd17c806a099d2d1f4" name="examples/bdb4-int64-bignum.php" role="data" />
+   <file baseinstalldir="/" md5sum="99d92d969ea9b1598b6d9b7b97d13240" name="examples/bdb5-int64-string.php" role="data" />
+   <file baseinstalldir="/" md5sum="863f0649d85b3ebfc846d58cf80e5b32" name="examples/bdb6-serialized.php" role="data" />
+   <file baseinstalldir="/" md5sum="549ee024a0927251ac310c4cf9a15461" name="examples/hdb1-simple.php" role="data" />
+   <file baseinstalldir="/" md5sum="73c57ad4d7a2582be38b3b93d48ee218" name="examples/hdb2-int32.php" role="data" />
+   <file baseinstalldir="/" md5sum="2794a42f31dbf27999938a480fd984fb" name="examples/hdb3-int64.php" role="data" />
+   <file baseinstalldir="/" md5sum="32b4accbbb0884813123036bee29ed99" name="examples/hdb4-int64-bignum.php" role="data" />
+   <file baseinstalldir="/" md5sum="e7a47869d602167a810d54ac278cf8e3" name="examples/hdb5-int64-string.php" role="data" />
+   <file baseinstalldir="/" md5sum="eefbafb3e9339b978056347910dc79dd" name="examples/hdb6-serialized.php" role="data" />
+   <file baseinstalldir="/" md5sum="f7883a03d1324b284442b73d5de0617a" name="examples/tchdb-client.php" role="data" />
+   <file baseinstalldir="/" md5sum="6b17d146229b0bd0a03123ff1b92aeab" name="examples/TCHDBServer.php" role="data" />
+   <file baseinstalldir="/" md5sum="e26479503d85b4d7cb7336a3b8c743d3" name="manual/file-entities.ent" role="doc" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="manual/functions.xml" role="doc" />
+   <file baseinstalldir="/" md5sum="5ca05f19f9969a84185344f3b9eae1f8" name="manual/Makefile" role="doc" />
+   <file baseinstalldir="/" md5sum="dce76dc55c50f4e74ebddf6e28bbbb3c" name="manual/manual.xml.in" role="doc" />
+   <file baseinstalldir="/" md5sum="08c3d694dc1d682461dbaffc4c159701" name="manual/tokyocabinet/configure.xml" role="doc" />
+   <file baseinstalldir="/" md5sum="d65d84e06082973d3e342f9a2545094d" name="manual/tokyocabinet/reference.xml" role="doc" />
+   <file baseinstalldir="/" md5sum="059c0f988cce7ab29638bffe227a3e4b" name="tests/bdb_all_method.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="af5da4ca90548af9610c11f070980be7" name="tests/fdb_all_method.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="c890c747149ab9572e1cdfb59a961c64" name="tests/hdb_all_method.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="fc35ab88dc73cced1e56b4274cd15378" name="tests/idb_all_method.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="f815567681aa0327a269b5e6950fef85" name="tests/jdb_all_method.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="7aa46e94b6a686ced64bcb03a10675b0" name="tests/rdbcfg.inc" role="test" />
+   <file baseinstalldir="/" md5sum="eb5c075b158c6b7c1d90d705c8973811" name="tests/rdb_all_method.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="6cbca4749de42fc51d7d09bc08278543" name="tests/skipif.inc" role="test" />
+   <file baseinstalldir="/" md5sum="67c8beadf378fec539b0f37da105b354" name="tests/spex-en.html" role="test" />
+   <file baseinstalldir="/" md5sum="3e43c29b59a143ebf7889e0eef719a22" name="tests/util_baseencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="d60f0d06957aeae008ce65bb0240d24b" name="tests/util_bsencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="26c5fa05e5c1f3bcfa1e7464f1fa8bca" name="tests/util_deflate.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="9121f593c91e945f4f8fb1847ea60f84" name="tests/util_getcrc.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="14311209c5bd875a4e7835ee7d13acf5" name="tests/util_gzipencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="648ed44267a32c99a74803e7d3806815" name="tests/util_mimeencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="3d4b4a40c342f48b5b6cf1eda940db82" name="tests/util_packencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="d4233b254c9978f257fb430055d83295" name="tests/util_quoteencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="d7a83d20dbbafb81c776321d8258e762" name="tests/util_urlbreak.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="43d45395e47b2e26ead9f99636dade3c" name="tests/util_urlencode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="0df71cf4cf3672db76fcf40f3675b516" name="tests/util_urlresolve.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="bc9f905cfacf364dd7759fe30adbf25d" name="tests/util_xmlbreak.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="4695abfee7e59550f6f7ff10b99f583f" name="tests/util_xmlescape.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="47520b8b993c870376b4ea01f237b092" name="config.m4" role="src" />
+   <file baseinstalldir="/" md5sum="2c1b22f005b1947f2257f7106482db67" name="CREDITS" role="doc" />
+   <file baseinstalldir="/" md5sum="7291f1b05a4608bc9223993fd2bea6c2" name="EXPERIMENTAL" role="doc" />
+   <file baseinstalldir="/" md5sum="cf40ac5fa27cc3ba0d44c44a455f9b64" name="LICENSE" role="doc" />
+   <file baseinstalldir="/" md5sum="7ae66d8663d777862abdb049d789486d" name="php_tokyocabinet.h" role="src" />
+   <file baseinstalldir="/" md5sum="a31732815d09acfbc80c5d1c712d6e30" name="ptc_abstract.c" role="src" />
+   <file baseinstalldir="/" md5sum="f0e88081a8b15228d517852d1be0756c" name="ptc_abstract.h" role="src" />
+   <file baseinstalldir="/" md5sum="75392faaf62a9ba5ced81c1de80eba01" name="ptc_bdb.c" role="src" />
+   <file baseinstalldir="/" md5sum="9691de2507ae92897be483af6b310455" name="ptc_compat.c" role="src" />
+   <file baseinstalldir="/" md5sum="82bd0abf3e8d3804a02288c0318ba230" name="ptc_compat.h" role="src" />
+   <file baseinstalldir="/" md5sum="f6001637c5dd482fc3b80eec586f10eb" name="ptc_exception.c" role="src" />
+   <file baseinstalldir="/" md5sum="614b966d4b5c25dfac17cb34324aadb3" name="ptc_fdb.c" role="src" />
+   <file baseinstalldir="/" md5sum="05adb92101c3850798a79a49e019d605" name="ptc_hdb.c" role="src" />
+   <file baseinstalldir="/" md5sum="103f0b498fe9f7ed45c1120c282a6c8b" name="ptc_idb.c" role="src" />
+   <file baseinstalldir="/" md5sum="45c616936223519e31be3d1070412c0d" name="ptc_jdb.c" role="src" />
+   <file baseinstalldir="/" md5sum="4c7d4064f01f27768cdcccf274a9c272" name="ptc_rdb.c" role="src" />
+   <file baseinstalldir="/" md5sum="7695dbbb91d18217ef18b40b3769e15e" name="ptc_util.c" role="src" />
+   <file baseinstalldir="/" md5sum="d4b1a5844334a6ba60ce15c93d0c2303" name="README" role="doc" />
+   <file baseinstalldir="/" md5sum="15d82eb06bc63fec09574b98697aa479" name="tokyocabinet.c" role="src" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>tokyocabinet</providesextension>
+ <extsrcrelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.4.0</release>
+    <api>0.4.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-06-19</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+   <notes>
+- Initial release on PEAR channel.
+   </notes>
+  </release>
+ </changelog>
+</package>
