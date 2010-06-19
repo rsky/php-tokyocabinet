@@ -4,7 +4,7 @@ PEAR::setErrorHandling(PEAR_ERROR_DIE);
 date_default_timezone_set('UTC');
 
 // general package information
-$channel        = '__uri';
+$channel        = 'pecl.opendogs.org';
 $packagename    = 'tokyocabinet';
 $summary        = 'The PHP bindings of the Tokyo Cabinet.';
 
@@ -51,7 +51,7 @@ $packagexml->setAPIVersion($apiversion);
 $packagexml->setReleaseStability($stability);
 $packagexml->setAPIStability($apistability);
 
-$packagexml->addMaintainer('lead', 'rsky', 'Ryusuke SEKIYAMA,', 'rsky0711@gmail.com');
+$packagexml->addMaintainer('lead', 'rsk', 'Ryusuke SEKIYAMA,', 'rsky0711@gmail.com');
 
 $packagexml->setPackageType('extsrc');
 $packagexml->setProvidesExtension($packagename);

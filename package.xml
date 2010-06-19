@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>tokyocabinet</name>
- <channel>__uri</channel>
+ <channel>pecl.opendogs.org</channel>
  <summary>The PHP bindings of the Tokyo Cabinet.</summary>
  <description>The PHP bindings of the Tokyo Cabinet.</description>
  <lead>
   <name>Ryusuke SEKIYAMA,</name>
-  <user>rsky</user>
+  <user>rsk</user>
   <email>rsky0711@gmail.com</email>
   <active>yes</active>
  </lead>
  <date>2010-06-19</date>
- <time>05:34:18</time>
+ <time>14:48:46</time>
  <version>
   <release>0.4.0</release>
   <api>0.4.0</api>
