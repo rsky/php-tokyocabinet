@@ -1,0 +1,3 @@
+<!ENTITY reference.tokyocabinet.reference SYSTEM './tokyocabinet/reference.xml'>
+<!ENTITY reference.tokyocabinet.configure SYSTEM './tokyocabinet/configure.xml'>
+<!ENTITY reference.tokyocabinet.functions SYSTEM './functions.xml'>
