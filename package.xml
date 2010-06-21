@@ -13,10 +13,10 @@
   <email>rsky0711@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-06-19</date>
- <time>14:48:46</time>
+ <date>2010-06-21</date>
+ <time>13:47:26</time>
  <version>
-  <release>0.4.0</release>
+  <release>0.4.1</release>
   <api>0.4.0</api>
  </version>
  <stability>
@@ -75,10 +75,10 @@
    <file baseinstalldir="/" md5sum="2c1b22f005b1947f2257f7106482db67" name="CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="7291f1b05a4608bc9223993fd2bea6c2" name="EXPERIMENTAL" role="doc" />
    <file baseinstalldir="/" md5sum="cf40ac5fa27cc3ba0d44c44a455f9b64" name="LICENSE" role="doc" />
-   <file baseinstalldir="/" md5sum="7ae66d8663d777862abdb049d789486d" name="php_tokyocabinet.h" role="src" />
+   <file baseinstalldir="/" md5sum="52bc3aa05e41d1a2e83ef550b407a8bc" name="php_tokyocabinet.h" role="src" />
    <file baseinstalldir="/" md5sum="a31732815d09acfbc80c5d1c712d6e30" name="ptc_abstract.c" role="src" />
    <file baseinstalldir="/" md5sum="f0e88081a8b15228d517852d1be0756c" name="ptc_abstract.h" role="src" />
-   <file baseinstalldir="/" md5sum="75392faaf62a9ba5ced81c1de80eba01" name="ptc_bdb.c" role="src" />
+   <file baseinstalldir="/" md5sum="69a1e8e71b333950a07177ffc70ad359" name="ptc_bdb.c" role="src" />
    <file baseinstalldir="/" md5sum="9691de2507ae92897be483af6b310455" name="ptc_compat.c" role="src" />
    <file baseinstalldir="/" md5sum="82bd0abf3e8d3804a02288c0318ba230" name="ptc_compat.h" role="src" />
    <file baseinstalldir="/" md5sum="f6001637c5dd482fc3b80eec586f10eb" name="ptc_exception.c" role="src" />
@@ -107,14 +107,14 @@
  <changelog>
   <release>
    <version>
-    <release>0.4.0</release>
+    <release>0.4.1</release>
     <api>0.4.0</api>
    </version>
    <stability>
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2010-06-19</date>
+   <date>2010-06-21</date>
    <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
    <notes>
 - Initial release on PEAR channel.

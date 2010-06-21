@@ -11,7 +11,7 @@ $summary        = 'The PHP bindings of the Tokyo Cabinet.';
 $description    = $summary;
 
 // information of cureent version
-$version        = '0.4.0';
+$version        = '0.4.1';
 $apiversion     = '0.4.0';
 $stability      = 'beta';
 $apistability   = 'beta';
