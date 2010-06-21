@@ -500,6 +500,7 @@ PTC_BDB_METHOD(putlist)
 	HashTable *vals;
 	int vnum;
 	zval **entry;
+	HashPosition pos;
 
 	if (ptc_parse_param_key_value(obj, &kbuf, &ksiz, obj->ktype,
 			(void **)&vals, &vnum, PTC_VALUE_IS_HASHTABLE) == FAILURE)
@@ -507,9 +508,9 @@ PTC_BDB_METHOD(putlist)
 		return;
 	}
 
-	zend_hash_internal_pointer_reset(vals);
+	zend_hash_internal_pointer_reset_ex(vals, &pos);
 
-	while (zend_hash_get_current_data(vals, (void **)&entry) == SUCCESS) {
+	while (zend_hash_get_current_data_ex(vals, (void **)&entry, &pos) == SUCCESS) {
 		void *vbuf;
 		int vsiz, is_copy;
 
@@ -529,7 +530,7 @@ PTC_BDB_METHOD(putlist)
 		if (is_copy) {
 			efree(vbuf);
 		}
-		zend_hash_move_forward(vals);
+		zend_hash_move_forward_ex(vals, &pos);
 	}
 
 	RETURN_TRUE;
