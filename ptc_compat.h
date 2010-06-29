@@ -193,6 +193,16 @@ ptc_set_zval_key_ex(zval *pzv, const void *kbuf, int ksiz, ptc_ktype ktype TSRML
 PTC_LOCAL int
 ptc_set_zval_value_ex(zval *pzv, const void *vbuf, int vsiz, ptc_vtype vtype TSRMLS_DC);
 
+#if PHP_API_VERSION < 20100412
+static inline void
+object_properties_init(zend_object *object, zend_class_entry *class_type)
+{
+	zval *tmp = NULL;
+	zend_hash_copy(object->properties, &class_type->default_properties,
+	               (copy_ctor_func_t)zval_add_ref, (void *)&tmp, sizeof(zval *));
+}
+#endif
+
 END_EXTERN_C()
 
 #endif /* __PTC_COMPAT_H__ */

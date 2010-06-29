@@ -393,8 +393,7 @@ ptc_fdb_new(zend_class_entry *ce TSRMLS_DC)
 	obj->parse_id = tcfdbkeytoid;
 
 	zend_object_std_init(&obj->std, ce TSRMLS_CC);
-	zend_hash_copy(obj->std.properties, &ce->default_properties,
-			(copy_ctor_func_t)zval_add_ref, NULL, sizeof(zval *));
+	object_properties_init(&obj->std, ce);
 
 	retval.handle = zend_objects_store_put(obj,
 			(zend_objects_store_dtor_t)zend_objects_destroy_object,

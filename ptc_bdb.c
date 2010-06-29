@@ -1436,9 +1436,8 @@ ptc_bdb_new(zend_class_entry *ce TSRMLS_DC)
 	PTC_OP_TSRMLS_SET(cmp);
 	obj->op = cmp;
 
-	zend_object_std_init(&obj->std, ce TSRMLS_CC);
-	zend_hash_copy(obj->std.properties, &ce->default_properties,
-			(copy_ctor_func_t)zval_add_ref, NULL, sizeof(zval *));
+	zend_object_std_init(&obj->std, ce TSRMLS_CC);\
+	object_properties_init(&obj->std, ce);
 
 	retval.handle = zend_objects_store_put(obj,
 			(zend_objects_store_dtor_t)zend_objects_destroy_object,
@@ -1462,8 +1461,7 @@ ptc_bdbcur_new(zend_class_entry *ce TSRMLS_DC)
 	obj->rewind = tcbdbcurfirst;
 
 	zend_object_std_init(&obj->std, ce TSRMLS_CC);
-	zend_hash_copy(obj->std.properties, &ce->default_properties,
-			(copy_ctor_func_t)zval_add_ref, NULL, sizeof(zval *));
+	object_properties_init(&obj->std, ce);
 
 	retval.handle = zend_objects_store_put(obj,
 			(zend_objects_store_dtor_t)zend_objects_destroy_object,
