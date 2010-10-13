@@ -95,7 +95,6 @@ PTC_BDB_METHOD(optimize);
 PTC_BDB_METHOD(tranbegin);
 PTC_BDB_METHOD(trancommit);
 PTC_BDB_METHOD(tranabort);
-PTC_BDB_METHOD(xmsiz);
 PTC_BDB_METHOD(getIterator);
 
 /* }}} */
@@ -775,23 +774,6 @@ PTC_BDB_METHOD(tranabort)
 }
 /* }}} TCBDB::tranabort */
 
-/* {{{ int TCBDB::xmsiz(void)
- * Get the size of the extra mapped memory of a B+ tree database object.
- */
-PTC_BDB_METHOD(xmsiz)
-{
-	PTC_DB_DECLARE_OBJECT(obj);
-	uint64_t xmsiz;
-
-	if (ZEND_NUM_ARGS() != 0) {
-		WRONG_PARAM_COUNT;
-	}
-
-	xmsiz = tcbdbxmsiz((TCBDB *)obj->db);
-	RETURN_UINT64(xmsiz);
-}
-/* }}} TCBDB::xmsiz */
-
 /* {{{ TCBDBITER TCBDB::getIterator(void)
  * IteratorAggregate implementation.
  */
@@ -1247,7 +1229,6 @@ class_init_TCBDB(ptc_deps *deps TSRMLS_DC)
 		PTC_DB_ME(path,         NULL)
 		PTC_DB_ME(rnum,         NULL)
 		PTC_DB_ME(fsiz,         NULL)
-		PTC_BDB_ME(xmsiz,       NULL)
 		/* IteratorAggregate implementation */
 		PTC_BDB_ME(getIterator, NULL)
 		/* ArrayAccess implementations */
