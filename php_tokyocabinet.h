@@ -52,7 +52,7 @@
 
 BEGIN_EXTERN_C()
 
-#define PTC_MODULE_VERSION "0.4.1"
+#define PTC_MODULE_VERSION "0.4.2"
 
 #if defined(__GNUC__) && __GNUC__ >= 4
 #define PTC_LOCAL __attribute__((visibility("hidden")))

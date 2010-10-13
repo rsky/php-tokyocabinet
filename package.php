@@ -11,13 +11,14 @@ $summary        = 'The PHP bindings of the Tokyo Cabinet.';
 $description    = $summary;
 
 // information of cureent version
-$version        = '0.4.1';
+$version        = '0.4.2';
 $apiversion     = '0.4.0';
 $stability      = 'beta';
 $apistability   = 'beta';
 
 $notes = <<<EOS
-- Initial release on PEAR channel.
+- Fixed using non-existant API function tcbdbxmsiz()
+  and removed method TCBDB::xmsiz()
 EOS;
 
 // set parameters to the package
